@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prodify. CRM for IT business - Sign Up</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div style="background-color: rgba(243, 244, 246, 0.5)" id="main-container">
+        <h1>Sign Up</h1>
+        <form id="register-form">
+            <div class="half-box spacing">
+                <label for="full-name">FULL NAME</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+            </div>
+            <div class="half-box">
+                <label for="phone">TEL</label>
+                <input type="tel" name="phone" id="phone" placeholder="(DDD) 0 0000 0000">
+            </div>
+            <div class="half-box spacing">
+                <label for="email">E-MAIL</label>
+                <input type="email" name="email" id="email" placeholder="email@email.com">
+            </div>
+            <div class="half-box">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <div class="half-box2 spacing">
+                <label for="company">COMPANY</label>
+                <input type="text" name="company" id="company" placeholder="Digite o nome da empresa">
+            </div>
+            <div class="half-box2 spacing">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" name="cnpj" id="cnpj" placeholder="Digite o CPNJ">
+            </div>
+            <!-- AQUI É O BOTÃO "O QUE A SUA EMPRESA FAZ COM AS OPÇÕES" -->
+            <div class="half-box2">
+                <select name="empresa-faz" required="required" id="empresa-faz">
+                    <option value="">O QUE SUA EMPRESA FAZ?</option>
+                    <option value="app">APLICATIVOS</option>
+                    <option value="websites">WEB SITES</option>
+                    <option value="ecommerce">E-COMMERCE</option>
+                </select>
+            </div>
+            <div class="full-box">
+                <label for="remember"><input type="checkbox" name="remember" id="remember"> Remember me
+                </label>
+            </div>
+            <div class="full-box">
+                <input type="submit" name="btn-register" id="btn-register" value="REGISTER">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="./script/script.js"></script>
+</body>
+</html>

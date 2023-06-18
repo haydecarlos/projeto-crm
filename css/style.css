@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #110A5E;
+    border: none;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+body {
+    padding-top: 5vh; /* view high -> 5% da tela */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,203,195,1) 50%, rgba(83,232,32,1) 100%);
+}
+
+#main-container {
+    width: 1180px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 22px;
+    padding: 38px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /*alinhar elementos do form da maneira que quiser: 1 em uma linha, 2 em uma linha */
+    justify-content: space-between; /*criar um pequeno espaço entre os elementos na mesma linha */
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative; /*já preparando para elementos com position absolute terem ele como referência */
+}
+
+.half-box2 {
+    flex: 1 1 30%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    border-bottom: 1px solid #110A5E;
+    padding: 10px;
+    font-size: 19px;
+    background: none;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #AEE85F;
+}
+
+input[type="submit"] {
+    width: 467px;
+    height: 55px;
+    background-color: #110A5E;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+select {
+    font-size: 16px;
+    text-align: center;
+    width: 365px;
+    height: 54px;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #110A5E;
+}
+
+select:focus {
+    border-color: #AEE85F;
+}
+
+#remember {
+    margin-right: 5px;
+}
+
+#remember, #remember-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* VALIDAÇÕES */
+
+.error-validation {
+    color: #FF1A1A;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
+
