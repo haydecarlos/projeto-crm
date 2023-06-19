@@ -2,10 +2,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: Pangea Afrikan Trial, sans-serif;
     color: #110A5E;
     border: none;
 }
+
+.nav-container {
+    margin-bottom: 5vh;
+    background-color: #F3F4F6;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 30px;
+    position: absolute;
+    font-weight: 700;
+    top: 22px;
+    left: 50px;
+  }
+  
+  .solutions {
+    font-size: 14px;
+    position: absolute;
+    top: 33px;
+    left: 767px;
+  }
+  
+  .about-us {
+    font-size: 14px;
+    position: absolute;
+    top: 33px;
+    left: 864px;
+  }
+  
+  #btn-login {
+    background-color: #F3F4F6;
+    color: #110A5E;
+    width: 103px;
+    height: 33px;
+    border: #110A5E solid 1px;
+    border-radius: 50px;
+    font-size: 14px;
+    position: absolute;
+    top: 27px;
+    left: 976px;
+    cursor: pointer;
+  }
+  
+  #btn-login:hover {
+    background-color: #110A5E;
+    color: #F3F4F6;
+    
+  }
+  
+  #btn-signup {
+    width: 103px;
+    height: 33px;
+    color: #F3F4F6;
+    background-color: #110A5E;
+    border: #110A5E solid 1px;
+    border-radius: 50px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -68px;
+    right: -103px;
+    cursor: pointer;
+  }
+  
+  #btn-signup:hover {
+    background-color: #F3F4F6;
+    color: #110A5E;
+  }
+  
+  .sign-up {
+    font-size: 14px;
+    position: absolute;
+    top: 33px;
+    left: 1131px;
+  }
 
 input, label {
     display: block;
@@ -17,7 +97,7 @@ input:focus, label:focus {
 }
 
 body {
-    padding-top: 5vh; /* view high -> 5% da tela */
+    /* padding-top: 5vh; view high -> 5% da tela */
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,203,195,1) 50%, rgba(83,232,32,1) 100%);
 }

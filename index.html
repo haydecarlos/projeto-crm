@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+          <div class="nav-container">
+            <div class="logo">
+              <p>prodify.</p>
+            </div>
+            <div class="solutions">
+              <p>Solutions</p>
+            </div>
+            <div class="about-us">
+              <p>About Us</p>
+            </div>
+            <div class="login">
+              <input type="submit" name="btn-login" id="btn-login" value="Log In">
+            </div>
+            <div class="sign-up">
+              <input type="submit" name="btn-signup" id="btn-signup" value="Sign Up">
+            </div>
+          </div>
+        </nav>
+    </header>
     <div style="background-color: rgba(243, 244, 246, 0.5)" id="main-container">
         <h1>Sign Up</h1>
         <form id="register-form">
@@ -49,7 +70,7 @@
                 </label>
             </div>
             <div class="full-box">
-                <input type="submit" name="btn-register" id="btn-register" value="REGISTER">
+                <input onclick="enviar()" type="submit" name="btn-register" id="btn-register" value="REGISTER">
             </div>
         </form>
     </div>
