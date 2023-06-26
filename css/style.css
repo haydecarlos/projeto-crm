@@ -2,90 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Pangea Afrikan Trial, sans-serif;
+    font-family: General Sans, sans-serif;
     color: #110A5E;
     border: none;
 }
-
-.nav-container {
-    margin-bottom: 5vh;
-    background-color: #F3F4F6;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  
-  .logo {
-    font-size: 30px;
-    position: absolute;
-    font-weight: 700;
-    top: 22px;
-    left: 50px;
-  }
-  
-  .solutions {
-    font-size: 14px;
-    position: absolute;
-    top: 33px;
-    left: 767px;
-  }
-  
-  .about-us {
-    font-size: 14px;
-    position: absolute;
-    top: 33px;
-    left: 864px;
-  }
-  
-  #btn-login {
-    background-color: #F3F4F6;
-    color: #110A5E;
-    width: 103px;
-    height: 33px;
-    border: #110A5E solid 1px;
-    border-radius: 50px;
-    font-size: 14px;
-    position: absolute;
-    top: 27px;
-    left: 976px;
-    cursor: pointer;
-  }
-  
-  #btn-login:hover {
-    background-color: #110A5E;
-    color: #F3F4F6;
-    
-  }
-  
-  #btn-signup {
-    width: 103px;
-    height: 33px;
-    color: #F3F4F6;
-    background-color: #110A5E;
-    border: #110A5E solid 1px;
-    border-radius: 50px;
-    font-size: 14px;
-    position: absolute;
-    bottom: -68px;
-    right: -103px;
-    cursor: pointer;
-  }
-  
-  #btn-signup:hover {
-    background-color: #F3F4F6;
-    color: #110A5E;
-  }
-  
-  .sign-up {
-    font-size: 14px;
-    position: absolute;
-    top: 33px;
-    left: 1131px;
-  }
 
 input, label {
     display: block;
@@ -97,28 +17,65 @@ input:focus, label:focus {
 }
 
 body {
-    /* padding-top: 5vh; view high -> 5% da tela */
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,203,195,1) 50%, rgba(83,232,32,1) 100%);
+    background-color: #EBEDF0;
 }
 
-#main-container {
-    width: 1180px;
-    height: 650px;
-    margin-left: auto;
-    margin-right: auto;
+.header-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 11vh;
+}
+
+#logo {
+    font-size: 30px;
+    position: absolute;
+    font-weight: 600;
+    top: 22px;
+    left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  #account-text {
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    left: 1135px;
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+.main-container {
+    position: relative;
+    width: 97%;
+    height: 86vh;
     border-radius: 22px;
     padding: 38px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1 {
     margin-bottom: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 form {
     display: flex;
     flex-wrap: wrap; /*alinhar elementos do form da maneira que quiser: 1 em uma linha, 2 em uma linha */
     justify-content: space-between; /*criar um pequeno espaço entre os elementos na mesma linha */
+    width: 614px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .full-box {
@@ -127,79 +84,45 @@ form {
 }
 
 .half-box {
-    flex: 1 1 45%;
+    flex: 1 1 49%;
     position: relative; /*já preparando para elementos com position absolute terem ele como referência */
 }
 
-.half-box2 {
-    flex: 1 1 30%;
-    position: relative;
-}
-
 .spacing {
-    margin-right: 2.5%;
-}
-
-label {
-    font-size: 18px;
+    margin-right: 1%;
 }
 
 input {
-    border-bottom: 1px solid #110A5E;
+    border: 1px solid #D4DADB;
+    border-radius: 8px;
     padding: 10px;
     font-size: 19px;
     background: none;
     margin-bottom: 40px;
 }
 
-input:focus {
-    border-color: #AEE85F;
+label {
+    font-size: 14px;
 }
 
 input[type="submit"] {
-    width: 467px;
-    height: 55px;
+    width: 103px;
+    height: 35px;
     background-color: #110A5E;
-    font-size: 24px;
-    color: white;
+    font-size: 14px;
+    color: #FFFFFF;
     border: none;
-    border-radius: 50px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-select {
-    font-size: 16px;
-    text-align: center;
-    width: 365px;
-    height: 54px;
-    background: none;
-    border-radius: 50px;
-    border: 1px solid #110A5E;
-}
-
-select:focus {
-    border-color: #AEE85F;
-}
-
-#remember {
+#newsletter #terms{
     margin-right: 5px;
 }
 
-#remember, #remember-label {
+#newsletter, #newsletter-label, #terms, #terms-label {
     display: inline-block;
     width: auto;
 }
 
-/* VALIDAÇÕES */
-
-.error-validation {
-    color: #FF1A1A;
-    position: absolute;
-    top: 57px;
-    font-size: .8rem;
-}
-
-.template {
-    display: none;
-}
 
